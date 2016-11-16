@@ -14,9 +14,9 @@ public class IndexController {
 
 	
 		//注入dubbo的服务service
-	
+	/*
 	   @Autowired
-	   private TestService  testService;
+	   private TestService  testService;*/
 	
 	 	@RequestMapping("/index")
 	    public String welcomePage(HttpServletRequest request, String msg,ModelMap model){
@@ -24,7 +24,7 @@ public class IndexController {
 	 			return "index";
 	    }
 	 	
-	 	
+	 /*	
 		@RequestMapping("/hello")
 	    public String hello(HttpServletRequest request, String name,ModelMap model){
 	 		   String msg = testService.hello(name);
@@ -33,7 +33,7 @@ public class IndexController {
 	 		   return "index";
 	    }
 	 	
-	 	
+	 	*/
 	 	
 	 	
 	 	

@@ -27,13 +27,12 @@
       
      	<!-- *************************** 调用dubbo提供的服务配置开始 ****************************************-->
         <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->  
-        <dubbo:application name="UEWeb" />  
+       <!--  <dubbo:application name="UEWeb" />   -->
          
-        <!-- <dubbo:registry address="multicast://224.5.6.7:1234" /> --> 
       	<!--   服务注册中心地址，表示要到这里订阅服务  -->
-        <dubbo:registry address="zookeeper://127.0.0.1:2181" />  
+        <!-- <dubbo:registry address="zookeeper://127.0.0.1:2181" />   -->
       
         <!-- 生成远程服务代理，可以像使用本地bean一样使用demoService -->  
-        <dubbo:reference id="testService"  interface="com.ue.uecommon.serviceInterface.TestService" />  
+        <!-- <dubbo:reference id="testService"  interface="com.ue.uecommon.serviceInterface.TestService" />   -->
         <!-- *************************** 调用dubbo提供的服务配置结束 ****************************************-->
 </beans>  
